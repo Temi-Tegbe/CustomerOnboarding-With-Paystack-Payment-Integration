@@ -89,6 +89,8 @@ namespace NEWCustomerOnboarding
                             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.JWT.Secret))
                         };
                     });
+
+            PaymentServiceStartupMock.ConfigureServices(services);
             CustomerOnboardingStartupMock.ConfigureServices(services);
 
             services.AddDbContext<AppDbContext>(options
@@ -97,6 +99,7 @@ namespace NEWCustomerOnboarding
               .AddEntityFrameworkStores<AppDbContext>()
               .AddDefaultTokenProviders();
             services.AddScoped<CustomerService>();
+            //services.AddScoped<PaymentService, IPaymentService>();
             services.AddSingleton<Audit>();
         }
 

@@ -1,0 +1,78 @@
+2022-04-03T17:09:09.9033559+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T17:09:09.9617047+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T17:09:09.9653376+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-03T17:09:27.8354266+01:00 8000000e-0003-fb00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Amount], [p].[CustomerId], [p].[Email], [p].[FirstName], [p].[LastName], [p].[Status], [p].[TransactionRef], [p].[dateTime]
+FROM [Payments] AS [p]
+WHERE [p].[Status] = CAST(1 AS bit)" (627a98df)
+2022-04-03T17:09:28.1021982+01:00 8000000e-0003-fb00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"CustomerOnboarding.Domain.Model.AppDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Status'.
+Invalid column name 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:41014311-fe58-448d-85e6-d6af2d5c3101
+Error Number:207,State:1,Class:16" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Status'.
+Invalid column name 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at NEWCustomerOnboarding.Controllers.PaymentsController.ViewTransactions() in C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\Controllers\PaymentsController.cs:line 43
+ClientConnectionId:41014311-fe58-448d-85e6-d6af2d5c3101
+Error Number:207,State:1,Class:16
+2022-04-03T17:09:28.2737337+01:00 8000000e-0003-fb00-b63f-84710c7967bb [ERR] Invalid column name 'Status'.
+Invalid column name 'Status'. (7f339e85)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Status'.
+Invalid column name 'Status'.
+   at NEWCustomerOnboarding.Controllers.PaymentsController.ViewTransactions() in C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\Controllers\PaymentsController.cs:line 49
+ClientConnectionId:41014311-fe58-448d-85e6-d6af2d5c3101
+Error Number:207,State:1,Class:16
+2022-04-03T17:10:43.8181925+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T17:10:43.8330277+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T17:10:43.8367580+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-03T17:12:15.3116783+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T17:12:15.3345100+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T17:12:15.3391927+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-03T17:20:34.7342366+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T17:20:34.7547780+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T17:20:34.7647273+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-03T17:30:54.4588801+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T17:30:54.4715850+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T17:30:54.4737225+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-03T17:31:56.1078641+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T17:31:56.1272779+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T17:31:56.1296413+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-03T19:20:24.7591557+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-03T19:20:24.7681229+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-03T19:20:24.7701572+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)

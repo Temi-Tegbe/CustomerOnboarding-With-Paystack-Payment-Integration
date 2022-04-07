@@ -20,6 +20,7 @@ namespace CustomerOnboarding.Domain.Model
 
         public ApplicationUser User { get; set; }
 
+        
       
 
         [Required]

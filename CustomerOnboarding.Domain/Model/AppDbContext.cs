@@ -16,6 +16,7 @@ namespace CustomerOnboarding.Domain.Model
         }
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -34,6 +35,13 @@ namespace CustomerOnboarding.Domain.Model
             modelBuilder.Entity<Customer>()
                 .HasOne(b => b.User)
                 .WithOne();
+
+            modelBuilder.Entity<Payment>()
+                .HasOne(a => a.Customer);
+
+            //modelBuilder.Entity<Payment>()
+            //    .Property(i => i.Amount)
+            //    .HasColumnType("Money");
                 
 
             modelBuilder.Entity<ApplicationRole>()

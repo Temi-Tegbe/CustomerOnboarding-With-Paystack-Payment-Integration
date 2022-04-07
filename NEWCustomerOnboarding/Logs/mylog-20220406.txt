@@ -1,0 +1,24 @@
+2022-04-06T12:02:40.5476738+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-06T12:02:40.5594519+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-06T12:02:40.5666292+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-06T12:05:22.2795606+01:00 8000003b-0007-ff00-b63f-84710c7967bb [ERR] The entity type 'PaymentDTO' was not found. Ensure that the entity type has been added to the model. (a1a6c748)
+System.InvalidOperationException: The entity type 'PaymentDTO' was not found. Ensure that the entity type has been added to the model.
+   at NEWCustomerOnboarding.Controllers.PaymentsController.Pay(PaymentDTO payment) in C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\Controllers\PaymentsController.cs:line 70
+2022-04-06T12:36:40.9213751+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-06T12:36:40.9334213+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-06T12:36:40.9412087+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-06T12:41:34.5046356+01:00 8000001f-0006-fe00-b63f-84710c7967bb [ERR] The entity type 'PaymentDTO' was not found. Ensure that the entity type has been added to the model. (a1a6c748)
+System.InvalidOperationException: The entity type 'PaymentDTO' was not found. Ensure that the entity type has been added to the model.
+   at NEWCustomerOnboarding.Controllers.PaymentsController.Pay(PaymentDTO payment) in C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\Controllers\PaymentsController.cs:line 70
+2022-04-06T12:58:48.4472621+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-06T12:58:48.4560690+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-06T12:58:48.4585321+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-06T13:05:16.0287444+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-06T13:05:16.0382526+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-06T13:05:16.0404420+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-06T13:26:49.1553114+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-06T13:26:49.1639676+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-06T13:26:49.1656877+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)
+2022-04-06T14:29:31.8421045+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-06T14:29:31.8531450+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-06T14:29:31.8557590+01:00  [INF] Content root path: "C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding" (b5d60022)

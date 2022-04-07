@@ -89,3 +89,4 @@ C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\obj\De
 C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\bin\Debug\net5.0\Humanizer.dll
 C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\tegbeat\source\repos\NEWCustomerOnboarding\NEWCustomerOnboarding\bin\Debug\net5.0\PayStack.Net.dll

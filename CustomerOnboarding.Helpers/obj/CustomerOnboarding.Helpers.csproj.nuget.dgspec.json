@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Users\\tegbeat\\source\\repos\\NEWCustomerOnboarding\\CustomerOnboarding.Domain\\CustomerOnboarding.Domain.csproj",
         "projectName": "CustomerOnboarding.Domain",
         "projectPath": "C:\\Users\\tegbeat\\source\\repos\\NEWCustomerOnboarding\\CustomerOnboarding.Domain\\CustomerOnboarding.Domain.csproj",
-        "packagesPath": "C:\\Users\\SBNTOP\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\tegbeat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\tegbeat\\source\\repos\\NEWCustomerOnboarding\\CustomerOnboarding.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SBNTOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tegbeat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,6 +80,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "PayStack.Net": {
+              "target": "Package",
+              "version": "[0.7.7, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[2.10.0, )"
@@ -118,11 +122,11 @@
         "projectUniqueName": "C:\\Users\\tegbeat\\source\\repos\\NEWCustomerOnboarding\\CustomerOnboarding.Helpers\\CustomerOnboarding.Helpers.csproj",
         "projectName": "CustomerOnboarding.Helpers",
         "projectPath": "C:\\Users\\tegbeat\\source\\repos\\NEWCustomerOnboarding\\CustomerOnboarding.Helpers\\CustomerOnboarding.Helpers.csproj",
-        "packagesPath": "C:\\Users\\SBNTOP\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\tegbeat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\tegbeat\\source\\repos\\NEWCustomerOnboarding\\CustomerOnboarding.Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SBNTOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tegbeat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -183,6 +187,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "PayStack.Net": {
+              "target": "Package",
+              "version": "[0.7.7, )"
             },
             "Serilog": {
               "target": "Package",
